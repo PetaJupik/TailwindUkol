@@ -1,5 +1,23 @@
 {
-  "dependencies": {
-    "tailwindcss": "^4.1.6"
+  "name": "wba-tailwind-project",
+  "version": "1.0.0",
+  "description": "A static webpage built with HTML5 and Tailwind CSS from Figma designs.",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "dev": "npm run watch:css"
+  },
+  "keywords": [
+    "html",
+    "tailwindcss",
+    "figma"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
   }
-}
+} 
